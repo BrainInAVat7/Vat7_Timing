@@ -12,8 +12,9 @@ timing functions.
 1.0.0-rc
 
 
----
 
+
+---
 
 ## Vat7 Project
 
@@ -58,8 +59,9 @@ stage of development.
 Other related projects are in the works but will remain private for now.
 
 
----
 
+
+---
 
 ## Dependencies
 
@@ -77,8 +79,9 @@ limited to:
 Obviously, the WINDOWS version works on WINDOWS.
 
 
----
 
+
+---
 
 ## Installation
 
@@ -91,12 +94,14 @@ name source file for your OS environment is listed in your compile
 command or build system source list.
 
 
----
 
+
+---
 
 ## API
 
 ### Functions
+
 
 **vat7_timing_count**
 
@@ -118,6 +123,7 @@ command or build system source list.
 
 
 
+
 **vat7_timing_frequency**
 
 *arguments*: void
@@ -132,8 +138,9 @@ command or build system source list.
 > by *vat7_timing_count*.
 
 
----
 
+
+---
 
 ## Usage Examples
 
@@ -183,8 +190,9 @@ while (seconds <= seconds_to_run)
 ```
 
 
----
 
+
+---
 
 ## Development Status and Plans
 
@@ -207,8 +215,9 @@ desktop environments are supported, but these are not the others exist, and
 it would be good to add support for more.
 
 
----
 
+
+---
 
 ## Note on AI use
 

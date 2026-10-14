@@ -11,8 +11,7 @@ timing functions.
 
 1.0.0-rc
 
-
-
+&nbsp;
 
 ---
 
@@ -58,8 +57,7 @@ stage of development.
 
 Other related projects are in the works but will remain private for now.
 
-
-
+&nbsp;
 
 ---
 
@@ -78,8 +76,7 @@ limited to:
 
 Obviously, the WINDOWS version works on WINDOWS.
 
-
-
+&nbsp;
 
 ---
 
@@ -93,8 +90,7 @@ Make sure *vat7_timing.h* is in your include path and that the clearly
 name source file for your OS environment is listed in your compile
 command or build system source list.
 
-
-
+&nbsp;
 
 ---
 
@@ -121,8 +117,7 @@ command or build system source list.
 > calculate real elapsed time in seconds to a precision of fractions of a
 > microsecond.
 
-
-
+&nbsp;
 
 **vat7_timing_frequency**
 
@@ -137,8 +132,7 @@ command or build system source list.
 > Returns the count value per second of the operating system counter queried
 > by *vat7_timing_count*.
 
-
-
+&nbsp;
 
 ---
 
@@ -164,6 +158,7 @@ double seconds = (double)(end_count - start_count) / (double)freq;
 // do something with seconds
 ```
 
+&nbsp;
 
 **Pattern 2**
 
@@ -189,8 +184,7 @@ while (seconds <= seconds_to_run)
 }
 ```
 
-
-
+&nbsp;
 
 ---
 
@@ -214,8 +208,7 @@ scenarios.
 desktop environments are supported, but these are not the others exist, and
 it would be good to add support for more.
 
-
-
+&nbsp;
 
 ---
 

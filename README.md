@@ -39,13 +39,21 @@ The new standalone pieces (which will take some time to separate and edit
 so that they stand alone) are:
 
 -Vat7_Timing
+
 -Vat7_Logger
+
 -Vat7_Profiler
+
 -Vat7_AutoTest
+
 -Vat7_WindowIO
+
 -Vat7_Audio
+
 -Vat7_Renderer
+
 -Vat7_LibC
+
 
 As of now (October 2026) these pieces are in various stages of development,
 ranging from perfectly functional (if simple) to nothing more than
@@ -68,9 +76,13 @@ The POSIX version should work on any POSIX environment including but not
 limited to:
 
 -LINUX
+
 -MAC
+
 -BSD
+
 -HAIKU
+
 
 Obviously, the WINDOWS version works on WINDOWS.
 
@@ -94,9 +106,13 @@ command or build system source list.
 
 ## API
 
-**Functions**
+### Functions
 
-*signature*: uint64_t vat7_timing_count (void);
+**vat7_timing_count**
+
+*arguments*: void
+
+*return*: uint64_t
 
 *header*: vat7_timing.h
 
@@ -111,14 +127,19 @@ command or build system source list.
 > microsecond.
 
 
-*signature*: uint64_t vat7_timing_frequency (void);
+
+**vat7_timing_frequency**
+
+*arguments*: void
+
+*return*: uint64_t
 
 *header*: vat7_timing.h
 
 *description*:
 
 > Returns the count value per second of the operating system counter queried
-by *vat7_timing_count*.
+> by *vat7_timing_count*.
 
 
 ---

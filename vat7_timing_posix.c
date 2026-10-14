@@ -17,7 +17,7 @@
 
 #define _POSIX_C_SOURCE 199309L
 
-#include "vat7_precision_timing.h"
+#include "vat7_timing.h"
 
 #include <stdint.h>
 #include <time.h>

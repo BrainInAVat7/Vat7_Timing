@@ -16,7 +16,7 @@
  */
 
 
-#include "vat7_precision_timing.h"
+#include "vat7_timing.h"
 
 #include <stdbool.h>
 #include <stdint.h>

@@ -38,21 +38,14 @@ rewriting a lot of the pieces in light of what I learned so far.
 The new standalone pieces (which will take some time to separate and edit
 so that they stand alone) are:
 
--Vat7_Timing
-
--Vat7_Logger
-
--Vat7_Profiler
-
--Vat7_AutoTest
-
--Vat7_WindowIO
-
--Vat7_Audio
-
--Vat7_Renderer
-
--Vat7_LibC
+- Vat7_Timing
+- Vat7_Logger
+- Vat7_Profiler
+- Vat7_AutoTest
+- Vat7_WindowIO
+- Vat7_Audio
+- Vat7_Renderer
+- Vat7_LibC
 
 
 As of now (October 2026) these pieces are in various stages of development,
@@ -75,13 +68,10 @@ No dependencies beyond the OS environment itself.
 The POSIX version should work on any POSIX environment including but not
 limited to:
 
--LINUX
-
--MAC
-
--BSD
-
--HAIKU
+- LINUX
+- MAC
+- BSD
+- HAIKU
 
 
 Obviously, the WINDOWS version works on WINDOWS.

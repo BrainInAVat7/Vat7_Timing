@@ -98,6 +98,7 @@ command or build system source list.
 
 ### Functions
 
+&nbsp;
 
 **vat7_timing_count**
 

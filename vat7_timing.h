@@ -1,5 +1,4 @@
 /* Author: BrainInAVat7
- * Date: 09/16/2026
  * COPYRIGHT: (c) 2026 BrainInAVat7
  * LICENSE: AGPL-3.0
  *
@@ -23,15 +22,11 @@
 
 /* Get a precision timing count at sub-microsecond resolution.
  * These timing counts are only meaningful when compared relatively
- * to one another.
+ * to one another and are guaranteed to be monotonic.
  */
 uint64_t vat7_timing_count (void);
 
-/* Get a precision timing frequency per second.
- * This is meant to be used with differences between precision
- * timer count values to calculate real time elapsed.
- *
- * (count_1 - count_2) / frequency = seconds elapsed
+/* Get a precision timing frequency in count per second.
  */
 uint64_t vat7_timing_frequency (void);
 

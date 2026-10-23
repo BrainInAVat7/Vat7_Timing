@@ -30,5 +30,7 @@ uint64_t vat7_timing_count (void);
  */
 uint64_t vat7_timing_frequency (void);
 
+/* Wait for a given number of milliseconds */
+void vat7_timing_wait (double milliseconds);
 
 #endif  /* Header guard */

@@ -61,3 +61,26 @@ uint64_t vat7_timing_frequency (void)
 	}
 	return frequency;
 }
+
+
+/* Pause execution for a given number of milliseconds.
+ */
+void vat7_timing_wait (double milliseconds)
+{
+	uint64_t wait_start = vat7_timing_count();
+	uint32_t ms;
+	struct timespec wait_timespec;
+	wait_timespec.tv_nsec = 1000000;
+	wait_timespec.tv_sec = 0;
+
+	// TODO move the magic number 3 here to a #define
+	for (ms = (uint32_t)milliseconds; ms > 3; ms--)
+	{
+		nanosleep(&wait_timespec, NULL);
+	}
+	while ((double)(vat7_timing_count() - wait_start)
+		/ (double)vat7_timing_frequency()
+		< milliseconds * 0.001 // to convert seconds
+	)
+	{ /* Do nothing */ }
+}

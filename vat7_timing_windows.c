@@ -72,7 +72,16 @@ uint64_t vat7_timing_frequency (void)
  */
 void vat7_timing_wait (double milliseconds)
 {
-	(void)milliseconds;
-	bool wait_function_implemented_on_windows = false;
-	assert(wait_function_implemented_on_windows);
+	uint64_t wait_start = vat7_timing_count();
+
+	// TODO move the magic number 3 here to a #define
+	for (uint32_t ms = (uint32_t)milliseconds; ms > 3; ms--)
+	{
+		Sleep(1);
+	}
+	while ((double)(vat7_timing_count() - wait_start)
+		/ (double)vat7_timing_frequency()
+		< milliseconds * 0.001 // to convert seconds
+	)
+	{ /* Do nothing */ }
 }

@@ -73,5 +73,6 @@ uint64_t vat7_timing_frequency (void)
 void vat7_timing_wait (double milliseconds)
 {
 	(void)milliseconds;
-	assert(false);
+	bool wait_function_implemented_on_windows = false;
+	assert(wait_function_implemented_on_windows);
 }
